@@ -15,10 +15,12 @@ img.img {
     width: 600px;
     height: auto;
     border-radius: 6px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0006);
+    z-index: 99;
 }
 body {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     width: 100%;
     height: 100vh;
@@ -28,20 +30,22 @@ body {
 
 .container {
     display: flex;
-    align-items: center;
+    align-items: self-start;
     justify-content: center;
     flex-direction: row;
     position: relative;
+    margin-top: 50px;
 }
 .btn {
     position: absolute;
-    top: 50%;
+    top: 42%;
     padding: 4px 13px;
     border-radius: 50%;
     border: none;
     background: linear-gradient(45deg, #ff006f, #930081);
     color: white;
     transition: all .4s linear;
+    z-index: 999;
 }
 .btn i {
     font-size: 25px;
