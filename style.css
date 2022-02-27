@@ -41,9 +41,19 @@ body {
     border: none;
     background: linear-gradient(45deg, #ff006f, #930081);
     color: white;
+    transition: all .4s linear;
 }
 .btn i {
     font-size: 25px;
+      transition: all .4s linear;
+}
+.btn:hover i {
+    font-size: 30px;
+      transition: all .4s linear;
+}
+ .btn:hover {
+    background: linear-gradient(45deg, #930081, #ff006f);
+    transition: all .4s linear;
 }
 button.previous.btn {
     left: 0%;
